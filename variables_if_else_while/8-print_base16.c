@@ -1,17 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - Entry point
- * Description: print all small alphabeti in reverse with a for loop
- * Return: Always 0 (Success)
+ * main - prints all numbers of base 16 in lowercase
+ * Return: Always 0
  */
 int main(void)
 {
-int n;
-for (n = 'z'; n >= 'a'; n--)
-{
-putchar(n);
+    char ch;
+
+    for (ch = '0'; ch <= '9'; ch++)
+        putchar(ch);
+
+    for (ch = 'a'; ch <= 'f'; ch++)
+        putchar(ch);
+
+    putchar('\n');
+
+    return (0);
 }
-putchar('\n');
-return (0);
-}
+
