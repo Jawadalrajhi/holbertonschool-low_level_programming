@@ -4,32 +4,27 @@
 
 /**
  * main - generates a random valid password for 101-crackme
- *        by emitting printable ASCII chars whose byte-sum is 2772
  *
  * Return: 0 on success
  */
 int main(void)
 {
-	int sum = 0;
-	int ch;
+int sum = 0;
+int ch;
 
-	srand((unsigned int)time(NULL));
+srand(time(NULL));
 
-	/* keep picking printable bytes [33..126] until the sum hits 2772 */
-	while (sum != 2772)
-	{
-		/* pick a printable ASCII char */
-		ch = (rand() % (126 - 33 + 1)) + 33;
-
-		/* only print/use it if it doesn't overshoot 2772 */
-		if (sum + ch <= 2772)
-		{
-			putchar(ch);
-			sum += ch;
-		}
-	}
-
-	/* no trailing newline; the checker pipes the output directly */
-	return (0);
+while (sum < 2772)
+{
+ch = rand() % 128;  /* random ASCII character */
+if ((sum + ch) > 2772)
+break;
+sum += ch;
+putchar(ch);
 }
 
+/* print the last char to reach exactly 2772 */
+putchar(2772 - sum);
+
+return (0);
+}
