@@ -9,8 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-    (void)argc; /* unused parameter */
+(void)argc; /* unused parameter */
 
-    printf("%s\n", argv[0]);
-    return (0);
+printf("%s\n", argv[0]);
+return (0);
 }
