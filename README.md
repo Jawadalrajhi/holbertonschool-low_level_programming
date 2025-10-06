@@ -3,8 +3,6 @@
 
 **Author:** Jawad Alrajhi (root)  
 **Repository:** [holbertonschool-low_level_programming](https://github.com/Jawadalrajhi/holbertonschool-low_level_programming)  
-**Semester:** [Specify Semester / Year]  
-
 ---
 
 ## ✨ Overview
@@ -34,7 +32,7 @@ This repository showcases my **journey in C programming** throughout the semeste
 - Advanced Topics: function pointers, modular/reusable code  
 - Software Practices: readability, debugging, testing  
 
-> `[ADD MORE SKILLS HERE]`
+> `[ MORE Skills ]`
 
 ---
 
@@ -69,7 +67,7 @@ This repository showcases my **journey in C programming** throughout the semeste
 - ✅ Applied **memory safety practices**  
 - ✅ Followed **Betty style guide**  
 
-> `[ADD MORE HIGHLIGHTS HERE]`
+> `[ MORE ]`
 
 ---
 
@@ -80,8 +78,6 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o output
 ./output
 ````
 
-> `[OPTIONAL: Add project-specific compilation instructions here]`
-
 ---
 
 ## 🏆 My C Programming Journey
@@ -91,7 +87,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o output
 * Then tackled **recursion, linked lists, variadic functions**
 * Goal: Think algorithmically, manage memory safely, write clean code
 
-> `[ADD FUTURE NOTES OR REFLECTIONS HERE]`
+> `[ More FUTURE ]`
 
 ---
 
@@ -112,7 +108,7 @@ You can jump directly to any project folder:
 * [variadic_functions](variadic_functions)
 * [singly_linked_lists](singly_linked_lists)
 * [argc_argv](argc_argv)
-* `[ADD NEW PROJECT LINK HERE]`
+* `[ NEW ]`
 
 ---
 
