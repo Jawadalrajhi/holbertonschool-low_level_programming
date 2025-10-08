@@ -1,7 +1,7 @@
 
-# 🖥️ Holberton School - C Programming Portfolio
+# 🖥️ Holberton School - C Programming 
 
-**Author:** Jawad Alrajhi (root)  
+**Author:** Jawad Alrajhi  
 **Repository:** [holbertonschool-low_level_programming](https://github.com/Jawadalrajhi/holbertonschool-low_level_programming)  
 ---
 
