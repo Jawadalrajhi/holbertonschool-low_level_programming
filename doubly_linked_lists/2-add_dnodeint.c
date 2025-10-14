@@ -1,18 +1,35 @@
-#include"lists.h"
-/**
-* dlistint_len - returns the number of elements
-* @h: head
-* Description: a function that returns the number of elements
-* Return: the number of nodes
-*/
-size_t dlistint_len(const dlistint_t *h)
-{
-	size_t counter = 0;
+#include <stdlib.h>
+#include <stdio.h>
+#include "lists.h"
 
-	while (h)
+/**
+  * add_dnodeint - Adds a new node at the beginning
+  * of a doubly linked list
+  * @head: The head of the doubly linked list
+  * @n: The number to place in the new node
+  *
+  * Return: The new head of the doubly linked list
+  */
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+{
+	dlistint_t *new_node = NULL;
+
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
+		return (NULL);
+
+	new_node->n = n;
+	if (*head)
 	{
-		h = h->next;
-		counter++;
+		new_node->next = *head;
+		new_node->prev = (*head)->prev;
+		(*head)->prev = new_node;
+		*head = new_node;
+		return (*head);
 	}
-	return (counter);
+
+	new_node->next = *head;
+	new_node->prev = NULL;
+	*head = new_node;
+	return (*head);
 }
